@@ -14,7 +14,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
 }
 
 ::selection{
@@ -68,16 +67,12 @@ form{
     position: absolute;
     top: 0;
     right: -15px;
-    height: 35px;
-    width: 35px;
     display: flex;
     border-radius: 50%;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #006692,#f2f3f7 50%);
+    background: white;
     background-size: 100% 200%;
-    transition: all 1s;
+    transition: 1s;
     font-size: 14px;
-    cursor: pointer;
 }
 form input[type="file"]{
     position: relative;
@@ -98,9 +93,7 @@ form i{
     pointer-events: none;
     cursor: pointer;
 }
-.file-upload{
-    background-position: 0 100%;
-}
+
 .file-upload:hover i{
     color: #2938aa;
 }
@@ -116,6 +109,7 @@ form i{
 }
 .form .grid-details{
     display: flex;
+    column-gap: 10px;
 }
 .input{
     display: flex;
@@ -170,4 +164,13 @@ form i{
 }
 .form .link a:hover{
     text-decoration: underline;
+}
+/* responsiveness */
+@media (max-width: 400px) {
+    .form{
+        min-width: 95vw;
+    }
+    .form form .input input{
+        width: 100%;
+    }
 }
