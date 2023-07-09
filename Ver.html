@@ -1,16 +1,3 @@
-<?php
-
-
-
-session_start();
-include 'php/db.php';
-$email = $_SESSION['email'];
-if(empty($email)){
-    header("Location: login.php");
-}
-$qry = mysqli_query($conn,"SELECT * FROM users WHERE email ='{$email}'");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,8 +10,7 @@ $qry = mysqli_query($conn,"SELECT * FROM users WHERE email ='{$email}'");
         <link rel="icon" href="" type="image/x-icon">
         <style>
         body{
-            background-image:url('');
-            height: 100%;
+            background-image: url('2137195.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
