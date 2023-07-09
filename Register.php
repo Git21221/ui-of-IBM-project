@@ -33,7 +33,7 @@ if(!empty($fname) && !empty($lname) && !empty($email) && !empty($phone) && !empt
                     if(in_array($img_extension,$extensions) === true){
                         $time = time();
                         $newimagename = $time.$img_name;
-                        if(move_uploaded_file($tmp_name, "../Images/".$newimagename))
+                        if(move_uploaded_file($tmp_name, "./".$newimagename))
                         {
                             $random_id = rand(time(),10000000);
                             $otp = mt_rand(1111,9999);
